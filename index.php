@@ -55,7 +55,7 @@
 
     <div id="footer"></div>
 
-    <script src="plantillas.js"></script>
-    <script src="carousel.js"></script>
+    <script src="JS/HS.js"></script>
+    <script src="JS/carousel.js"></script>
 </body>
 </html>
