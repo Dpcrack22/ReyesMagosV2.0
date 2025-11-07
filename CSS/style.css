@@ -1,6 +1,8 @@
-/* HEADER */
+/* =========================
+   HEADER (global)
+   ========================= */
 header {
-    background-color: #1c1c1c; /* negro oscuro */
+    background-color: #1c1c1c;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -12,7 +14,7 @@ header {
 
 header h1 {
     font-size: 1.8rem;
-    color: #6a0dad; /* morado */
+    color: #6a0dad;
     margin: 0;
 }
 
@@ -25,17 +27,19 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #e63946; /* rojo */
+    color: #e63946;
 }
 
-/* Footer */
+/* =========================
+   FOOTER (global)
+   ========================= */
 footer {
     background-color: #1c1c1c;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-    border-top: 2px solid #6a0dad; /* morado */
+    border-top: 2px solid #6a0dad;
 }
 
 footer p {
@@ -44,34 +48,149 @@ footer p {
     color: #ccc;
 }
 
+/* =========================
+   ESTILOS PRINCIPALES INDEX (aislados con .bodyIndex)
+   ========================= */
+.bodyIndex {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+}
 
+/* CAROUSEL */
+.bodyIndex .carousel {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
 
+.bodyIndex .carousel img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid #6a0dad;
+}
 
+.bodyIndex .slide {
+    display: none;
+}
 
+.bodyIndex .slide.active {
+    display: block;
+}
 
+.bodyIndex .prev,
+.bodyIndex .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
 
+.bodyIndex .prev:hover,
+.bodyIndex .next:hover {
+    background-color: rgba(106,13,173,0.8);
+}
 
-/* Responsivo */
+.bodyIndex .prev {
+    left: 10px;
+}
+
+.bodyIndex .next {
+    right: 10px;
+}
+
+/* BLOQUES (sección inferior) */
+.bodyIndex .bloques {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+    gap: 1.5rem;
+    background-color: #121212;
+}
+
+.bodyIndex .bloque {
+    background-color: #1e1e1e;
+    border: 2px solid #6a0dad;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    width: 22%;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bodyIndex .bloque:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(106,13,173,0.6);
+}
+
+.bodyIndex .bloque h3 {
+    color: #6a0dad;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.bodyIndex .bloque p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.bodyIndex .bloque button {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bodyIndex .bloque button:hover {
+    background-color: #e63946;
+}
+
+/* =========================
+   RESPONSIVO
+   ========================= */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     header nav {
         margin-top: 0.5rem;
     }
-    
+
     header nav a {
         margin: 0 0.5rem 0.5rem 0;
     }
 
-    .bloques {
+    .bodyIndex .bloques {
         flex-direction: column;
         align-items: center;
     }
 
-    .bloque {
+    .bodyIndex .bloque {
         width: 80%;
+    }
+
+    .bodyIndex .carousel img {
+        height: 300px;
     }
 }
