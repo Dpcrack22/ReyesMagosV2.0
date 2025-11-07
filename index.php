@@ -56,7 +56,7 @@
 
     <div id="footer"></div>
 
-    <script src="JS/HS.js"></script>
-    <script src="JS/carousel.js"></script>
+    <script src="/JS/HS.js"></script>
+    <script src="/JS/carousel.js"></script>
 </body>
 </html>
