@@ -13,11 +13,11 @@
     <div id="footer"></div>
 
     <script>
-        fetch('header.html')
+        fetch('/INCLUDES/header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header').innerHTML = data);
 
-        fetch('footer.html')
+        fetch('/INCLUDES/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
