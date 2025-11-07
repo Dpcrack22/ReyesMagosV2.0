@@ -13,5 +13,4 @@ function headerFooter() {
         .catch(err => console.error('Error cargando footer:', err));
 }
 
-// Ejecutar la función al cargar la página
 document.addEventListener('DOMContentLoaded', headerFooter);
