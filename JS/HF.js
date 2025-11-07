@@ -1,16 +1,17 @@
 function headerFooter() {
-    const headerEl = document.getElementById('header');
-    const footerEl = document.getElementById('footer');
-
     fetch('INCLUDES/header.html')
-        .then(res => res.text())
-        .then(data => headerEl.innerHTML = data)
-        .catch(err => console.error('Error cargando header:', err));
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el header:', error));
 
     fetch('INCLUDES/footer.html')
-        .then(res => res.text())
-        .then(data => footerEl.innerHTML = data)
-        .catch(err => console.error('Error cargando footer:', err));
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el footer:', error));
 }
 
 document.addEventListener('DOMContentLoaded', headerFooter);
