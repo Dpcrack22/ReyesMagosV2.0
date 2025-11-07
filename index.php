@@ -12,14 +12,6 @@
     </main>
     <div id="footer"></div>
 
-    <script>
-        fetch('/INCLUDES/header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-
-        fetch('/INCLUDES/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+    <script src="JS/HF.js"></script>
 </body>
 </html>
