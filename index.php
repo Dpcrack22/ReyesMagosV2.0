@@ -7,11 +7,17 @@
 </head>
 <body>
     <div id="header"></div>
-    <main>
-        <h2>Lista de regalos</h2>
-    </main>
-    <div id="footer"></div>
+    
 
+
+
+
+
+
+
+
+    
+    <div id="footer"></div>
     <script src="JS/HF.js"></script>
 </body>
 </html>
