@@ -113,10 +113,10 @@ footer p {
 /* BLOQUES (sección inferior) */
 .bodyIndex .bloques {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column; /* 👈 AHORA VAN UNO DEBAJO DE OTRO */
+    align-items: center;
     padding: 3rem 1rem;
-    gap: 1.5rem;
+    gap: 2rem;
     background-color: #121212;
 }
 
@@ -125,8 +125,8 @@ footer p {
     border: 2px solid #6a0dad;
     border-radius: 12px;
     padding: 2rem 1.5rem;
-    width: 22%;
-    min-width: 250px;
+    width: 80%;
+    max-width: 800px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -163,7 +163,6 @@ footer p {
 .bodyIndex .bloque button:hover {
     background-color: #e63946;
 }
-
 /* =========================
    RESPONSIVO
    ========================= */
