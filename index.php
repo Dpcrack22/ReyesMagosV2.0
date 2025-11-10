@@ -14,13 +14,19 @@
     <!-- Carousel -->
     <section class="carousel">
         <div class="slide active">
-            <img src="imagenes/slide1.jpg" alt="Reyes Magos 1">
+            <img src="./IMG/anime_car.webp" alt="Reyes Magos 1">
         </div>
         <div class="slide">
-            <img src="imagenes/slide2.jpg" alt="Reyes Magos 2">
+            <img src="./IMG/goku_car.png" alt="Reyes Magos 2">
         </div>
         <div class="slide">
-            <img src="imagenes/slide3.jpg" alt="Reyes Magos 3">
+            <img src="./IMG/Naruto_car.jpg" alt="Reyes Magos 3">
+        </div>
+        <div class="slide">
+            <img src="./IMG/Spider_car.png" alt="Reyes Magos 3">
+        </div>
+        <div class="slide">
+            <img src="./IMG/Todoroki_car.jpg" alt="Reyes Magos 3">
         </div>
         <!-- Controles -->
         <button class="prev">&#10094;</button>
@@ -30,7 +36,7 @@
     <!-- Sección de bloques -->
     <section class="bloques">
         <div class="bloque">
-            <img src="" alt="">
+            <img src="./IMG/Bienvenida.jpg" alt="Iso imagen de bienvenida">
             <h3>Bienvenida</h3>
             <p>Una breve descripción sobre la web y su propósito.</p>
             <button href='index.html'>Saber más</button>
@@ -40,11 +46,11 @@
             <h3>Regalos</h3>
             <p>Explora todos los regalos que me gustaría recibir.</p>
             <button href='regalos.html'>Ver regalos</button>
-            <img src="" alt="">
+            <img src="./IMG/Gifts.jpg" alt="Gifts imagen">
         </div>
 
         <div class="bloque">
-            <img src="" alt="">
+            <img src="./IMG/Contact.jpg" alt="Gojos imagen de contacto">
             <h3>Contacto</h3>
             <p>Si quieres enviarme un mensaje o sugerencia, hazlo aquí.</p>
             <button href='contacto.html'>Contactar</button>
@@ -54,7 +60,7 @@
             <h3>Novedades</h3>
             <p>Mira los regalos destacados y mis favoritos de esta temporada.</p>
             <button href='destacados.html'>Ver destacados</button>
-            <img src="" alt="">
+            <img src="./IMG/News.jpg" alt="">
         </div>
     </section>
 
