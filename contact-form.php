@@ -12,8 +12,6 @@ $username = "root";
 $password = "Dpcrack22"; 
 $dbname = "mi_web";
 
-$destinatario = "dpcrack22yt@gmail.com";
-
 /****************************************/
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -47,26 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $stmt->close();
     $conn->close();
-
-    // ENVIAR EMAIL
-    $asunto = "Nuevo mensaje desde tu web - Contacto";
-    $cuerpo = "
-    Has recibido un nuevo mensaje:
-
-    Nombre: $nombre
-    Email: $email
-
-    Mensaje:
-    $mensaje
-    ";
-
-    $headers = "From: $email\r\nReply-To: $email\r\n";
-
-    mail($destinatario, $asunto, $cuerpo, $headers);
-
-    echo "Mensaje enviado correctamente.";
-    exit;
-
+    
 } else {
     echo "Acceso inválido.";
 }
