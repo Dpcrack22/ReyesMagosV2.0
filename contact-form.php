@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 
 $servername = "localhost";
 $username = "root";
-$password = ""; 
+$password = "Dpcrack22"; 
 $dbname = "mi_web";
 
 $destinatario = "dpcrack22yt@gmail.com";
@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // GUARDAR EN BD
+    
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
