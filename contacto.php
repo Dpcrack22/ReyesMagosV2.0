@@ -6,19 +6,26 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body class="bodyContacto">
     <div id="header"></div>
 
-    <section class="contacto">
+    <div class="contacto-container">
         <h2>Contacto</h2>
+        <p class="contacto-desc">Envíame cualquier sugerencia, idea o mensaje.</p>
 
-        <form action="contact-form.php" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
-            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+        <form class="contacto-form" action="contact-form.php" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
         </form>
-    </section>
+    </div>
 
     <div id="footer"></div>
     <script src="JS/HF.js"></script>
