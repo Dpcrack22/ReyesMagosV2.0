@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reyes Magos</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="CSS/style.css?<?php echo time(); ?>" />
 </head>
 <body class="bodyIndex">
 
@@ -37,29 +36,46 @@
     <section class="bloques">
         <div class="bloque">
             <img src="./IMG/Bienvenida.jpg" alt="Iso imagen de bienvenida">
-            <h3>Bienvenida</h3>
-            <p>Una breve descripción sobre la web y su propósito.</p>
-            <button href='index.html'>Saber más</button>
+            <div>
+                <h3>Bienvenida</h3>
+                <p>Bienvenid@ a mi pequeño rincón mágico de la web.<br><br>
+                    Aquí encontrarás un espacio hecho con cariño, donde mezclo un poco de mis gustos, mis ideas y las cosas que me hacen ilusión.<br><br>
+                    Esta página está pensada para compartir contigo un trocito de mi mundo: desde mis series y juegos favoritos hasta los detalles que me gustaría recibir.<br><br>
+                    Relájate, explora y disfruta del viaje. ✨</p>
+            </div>
         </div>
 
         <div class="bloque">
-            <h3>Regalos</h3>
-            <p>Explora todos los regalos que me gustaría recibir.</p>
-            <button href='regalos.html'>Ver regalos</button>
+            <div>
+                <h3>Regalos</h3>
+                <p>Aquí puedes descubrir todos los regalos que me harían ilusión esta temporada.
+                    He reunido cosas que representan mis gustos: desde detalles frikis y anime, hasta cosas útiles, bonitas y especiales.<br><br>
+                    Si quieres inspirarte o simplemente cotillear mis favoritos… este es tu lugar. 🎁💜</p>
+                <a href='regalos.php'>Ver regalos</a>
+            </div>
             <img src="./IMG/Gifts.jpg" alt="Gifts imagen">
+            
         </div>
 
         <div class="bloque">
             <img src="./IMG/Contact.jpg" alt="Gojos imagen de contacto">
-            <h3>Contacto</h3>
-            <p>Si quieres enviarme un mensaje o sugerencia, hazlo aquí.</p>
-            <button href='contacto.html'>Contactar</button>
+            <div>
+                <h3>Contacto</h3>
+                <p>Si quieres decirme algo, dejar una sugerencia, hacer una pregunta o simplemente saludar… este es el sitio indicado.<br><br>
+                Tu mensaje siempre será bienvenido.
+                Gracias por pasarte por aquí y dedicarme un momento. 💫</p>
+                <a href='contacto.php'>Contactar</a>
+            </div>
         </div>
-
+    
         <div class="bloque">
-            <h3>Novedades</h3>
-            <p>Mira los regalos destacados y mis favoritos de esta temporada.</p>
-            <button href='destacados.html'>Ver destacados</button>
+            <div>
+                <h3>Novedades</h3>
+                <p>En este apartado podrás ver todas las novedades, cambios y cositas que voy añadiendo a la web.
+                    Desde regalos destacados, nuevas ideas, actualizaciones, diseños, imágenes y cualquier cosa que merezca un lugar especial.<br><br>
+                    Si quieres enterarte de lo último y descubrir qué estoy preparando, pásate por aquí de vez en cuando. Hay sorpresas que valen la pena. ⚡💜</p>
+                <a href='destacados.php'>Ver destacados</a>
+            </div>
             <img src="./IMG/News.jpg" alt="">
         </div>
     </section>

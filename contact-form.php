@@ -1,0 +1,66 @@
+<?php
+/*************** CONFIG ****************/
+
+$servername = "localhost";
+$username = "root";
+$password = ""; 
+$dbname = "mi_web";
+
+$destinatario = "dpcrack22yt@gmail.com";
+
+/****************************************/
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    $nombre = trim($_POST["nombre"] ?? "");
+    $email = trim($_POST["email"] ?? "");
+    $mensaje = trim($_POST["mensaje"] ?? "");
+
+    if (empty($nombre) || empty($email) || empty($mensaje)) {
+        die("ERROR: Todos los campos son obligatorios.");
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("ERROR: El email no es válido.");
+    }
+
+    // GUARDAR EN BD
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Error al conectar a MySQL: " . $conn->connect_error);
+    }
+
+    $stmt = $conn->prepare("INSERT INTO mensajes (nombre, email, mensaje) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $nombre, $email, $mensaje);
+
+    if (!$stmt->execute()) {
+        die("Error al guardar en la base de datos: " . $stmt->error);
+    }
+
+    $stmt->close();
+    $conn->close();
+
+    // ENVIAR EMAIL
+    $asunto = "Nuevo mensaje desde tu web - Contacto";
+    $cuerpo = "
+    Has recibido un nuevo mensaje:
+
+    Nombre: $nombre
+    Email: $email
+
+    Mensaje:
+    $mensaje
+    ";
+
+    $headers = "From: $email\r\nReply-To: $email\r\n";
+
+    mail($destinatario, $asunto, $cuerpo, $headers);
+
+    echo "Mensaje enviado correctamente.";
+    exit;
+
+} else {
+    echo "Acceso inválido.";
+}
+?>
