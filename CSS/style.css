@@ -2,6 +2,8 @@
    HEADER (global)
    ========================= */
 
+
+   
 *{
     margin: 0;
     padding: 0;
@@ -49,6 +51,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
     border-top: 2px solid #6a0dad;
+    margin-bottom: 0;
     
 }
 
@@ -273,4 +276,225 @@ footer p {
 
 .contacto-form button:hover {
     background-color: #e63946;
+}
+
+.bodyContacto footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    border-top: 2px solid #6a0dad;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* =========================
+   ESTILOS regalos
+   ========================= */
+
+.bodyRegalos {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 0; /* espacio para footer */
+}
+
+.bodyRegalos .tituloRegalos {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    color: #6a0dad;
+    margin-bottom: 2rem;
+}
+
+/* GRID CONTENEDOR */
+.bodyRegalos .grid {
+    width: 90%;
+    max-width: 1300px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.bodyRegalos .card {
+    background-color: #1a1a1a;
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(106,13,173,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover de tarjeta */
+.bodyRegalos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(106,13,173,0.6);
+}
+
+.bodyRegalos .card img {
+    width: 90%;
+    height: 400px; /* altura fija */
+    object-fit:contain; /* ocupa todo sin deformar */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background-color: #121212; /* fondo para transparencias */
+    background-color: white;
+}
+
+/* Título */
+.bodyRegalos .card h3 {
+    font-size: 1.4rem;
+    color: #6a0dad;
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción */
+.bodyRegalos .card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+/* Botón */
+.bodyRegalos .card a {
+    display: inline-block;
+    padding: 0.7rem 1.3rem;
+    background-color: #6a0dad;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Hover del botón */
+.bodyRegalos .card a:hover {
+    background-color: #e63946;
+}
+
+/* =========================
+   ESTILOS destacados.php
+   ========================= */
+
+.bodyDestacados {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 0; /* espacio para footer */
+    
+}
+
+.bodyDestacados .tituloRegalos {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    color: #6a0dad;
+    margin-bottom: 2rem;
+}
+
+/* GRID CONTENEDOR */
+.bodyDestacados .grid {
+    width: 90%;
+    max-width: 1300px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.bodyDestacados .card {
+    background-color: #1a1a1a;
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(106,13,173,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover de tarjeta */
+.bodyDestacados .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(106,13,173,0.6);
+}
+
+.bodyDestacados .card img {
+    width: 90%;
+    height: 400px; /* altura fija */
+    object-fit:contain; /* ocupa todo sin deformar */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    background-color: #121212; /* fondo para transparencias */
+    background-color: white;
+}
+
+/* Título */
+.bodyDestacados .card h3 {
+    font-size: 1.4rem;
+    color: #6a0dad;
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción */
+.bodyDestacados .card p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+/* Botón */
+.bodyDestacados .card a {
+    display: inline-block;
+    padding: 0.7rem 1.3rem;
+    background-color: #6a0dad;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Hover del botón */
+.bodyDestacados .card a:hover {
+    background-color: #e63946;
+}
+
+/* BOTON REGRESO */
+.botonRegreso {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+.botonRegreso a {
+    color: #fff;
+    text-decoration: none;
+}
+.botonRegreso:hover {
+    background-color: #e63946;
+    box-shadow: 0 6px 16px rgba(106,13,173,0.6);
 }
